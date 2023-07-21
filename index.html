@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images/logo2.png" alt="logo images" class="logo">
+            </a>
+            <ul>
+                <li><img src="images/notification.png" alt="notification"></li>
+                <li><img src="images/inbox.png" alt="inbox"></li>
+                <li><img src="images/video.png" alt="video" ></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="profile">
+            </div>
+        </div>
+
+
+         <!-------------------dropdown-settings-menu----------------------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                       <p>Barry Allen</p>
+                       <a href="profile.html">See your profile</a>
+                    </div>   
+                   </div>
+                   <hr/>
+                   <div class="user-profile">
+                    <img src="images/feedback.png" >
+                    <div>
+                       <p>Give Feedback</p>
+                       <a href="#">Help us to improve the new design</a>
+                    </div>   
+                   </div>
+                   <hr/>
+                   <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy<img src="images/arrow.png" width="10px"></a>
+                   </div>
+
+                   <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+                   </div>
+
+                   <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+                   </div>
+
+                   <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                   </div>
+            </div>
+            
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-------------------left-sidebar----------------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="">Full stack Developer</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!-------------------main-content----------------------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>John</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Alice</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Mike</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                 <img src="images/profile-pic.png" alt="">
+                 <div>
+                    <p>Barry Allen</p>
+                    <small>Public<i class="fas fa-caret-down"></i></small>
+                 </div>   
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind,Barry?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                           <p>Barry Allen</p>
+                           <span>June 2 2022,13:40 pm</span>
+                        </div>   
+                       </div>
+                       <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                   <p class="post-text">Subscribe <span>@Easy Tutorial Youtube</span> channel to watch more on website development and UI designs.<a href="#">#EasyTutorials</a> <a href="#">#YoutubeChannel</a></p>
+                   <img src="images/feed-image-1.png" class="post-img">
+                   <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png">120</div>
+                            <div><img src="images/comments.png">20</div>
+                            <div><img src="images/share.png">45</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                   </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                           <p>Barry Allen</p>
+                           <span>May 28 2022,19:40 pm</span>
+                        </div>   
+                       </div>
+                       <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                   <p class="post-text">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.<span>@Easy Tutorial Youtube</span></a> <a href="#">#YoutubeChannel</a></p>
+                   <img src="images/feed-image-2.png" class="post-img">
+                   <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">254</div> 
+                            <div><img src="images/comments.png">20</div>
+                            <div><img src="images/share.png">45</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                   </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                           <p>Barry Allen</p>
+                           <span>May 28 2022,19:40 pm</span>
+                        </div>   
+                       </div>
+                       <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                   <p class="post-text">The World Wide Web is about communication between web clients and web servers.
+
+                    Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device.<span>@Easy Tutorial Youtube</span></a> <a href="#">#YoutubeChannel</a></p>
+                   <img src="images/feed-image-3.png" class="post-img">
+                   <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">254</div> 
+                            <div><img src="images/comments.png">20</div>
+                            <div><img src="images/share.png">45</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                   </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                           <p>Barry Allen</p>
+                           <span>May 28 2022,19:40 pm</span>
+                        </div>   
+                       </div>
+                       <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                   <p class="post-text">Despite the XML and Http in the name, XHR is used with other protocols than HTTP, and the data can be of many different types like HTML, CSS, XML, JSON, and plain text.<span>@Easy Tutorial Youtube</span></a> <a href="#">#YoutubeChannel</a></p>
+                   <img src="images/feed-image-4.png" class="post-img">
+                   <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">254</div> 
+                            <div><img src="images/comments.png">20</div>
+                            <div><img src="images/share.png">45</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                   </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                           <p>Barry Allen</p>
+                           <span>May 28 2022,19:40 pm</span>
+                        </div>   
+                       </div>
+                       <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                   <p class="post-text">Front-end code is used to create static websites, where the purpose is to display the web page. However, if you want to make your website dynamic<span>@Easy Tutorial Youtube</span></a> <a href="#">#YoutubeChannel</a></p>
+                   <img src="images/feed-image-5.png" class="post-img">
+                   <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png">254</div> 
+                            <div><img src="images/comments.png">20</div>
+                            <div><img src="images/share.png">45</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                   </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+        <!-------------------right-sidebar----------------------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>02</h3>
+                    <span>JUNE</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Jadoun Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>05</h3>
+                    <span>JULY</span>
+                </div>
+                <div class="right-event">
+                    <h4>Web Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Jadoun Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alice Rose</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Mike Jones</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">9
+                </div>
+                <p>Alison Hunter</p>
+            </div>
+        
+        </div>
+    
+    
+    </div>
+
+ <div class="footer">
+    <p>Copyright 2023-Jadoun Company Ltd</p>
+ </div>
+ <script src="script.js"></script> 
+</body>
+</html>
